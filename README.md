@@ -19,7 +19,7 @@ Get code
 ```shell
 git clone https://github.com/fealaer/StartingPointJS.git <name-of-your-project>
 cd <name-of-your-project>
-./github.sh <url-to-your-repository>
+./github.sh <url-to-your-github-repository>
 ```
 
 Test that everything works fine
@@ -57,15 +57,25 @@ NODE_ENV=production node server/app.js
 
 Configure heroku
 
-* **Note:** you need to set up heroku tools first
+**Note:** you need to set up heroku tools first
+
+New project
 
 ```shell
 ./heroku.sh <name-of-your-project>
 ```
+
+If project already exists
+
+```shell
+git remote add <url-to-your-heroku-repository>
+```
+
 For release on heroku
 
-* **Note:** you need to configure heroku first
-* **Note:** branch release will be updated to master and released
+**Note:** you need to configure heroku first
+
+**Note:** branch release will be updated to master and released
 
 ```shell
 ./release.sh
