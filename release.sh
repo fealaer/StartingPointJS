@@ -1,6 +1,6 @@
 #!/bin/bash
 git checkout release
-git pull origin master -qf
+git merge master -q -m "Merge to release"
 grunt build
 git add .
 git commit -m 'New Build'
